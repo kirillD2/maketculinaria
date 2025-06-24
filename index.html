@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISHLAK</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="current-album" style="display: flex; align-items: center;"> <!-- Добавлено display: flex для горизонтального расположения -->
+        <img id="album-cover" src="imgs/apnoe.png" alt="Kishlak">
+        
+        <!-- Блок с информацией о песне справа от обложки -->
+        <div id="song-info" style="margin-left: 20px;">
+            <h3 id="song-title">Apnoe</h3> <!-- Название песни -->
+            <p id="artist-name">Kishlak</p> <!-- Имя исполнителя -->
+        </div>
+        
+        <audio id="audio" src="music/Kishlak_Apnea.mp3"></audio>
+    </div>
+
+    <div class="progress-container">
+        <input type="range" id="progress" value="0" step="1" min="0" max="100">
+    </div>
+    <div class="time-container">
+        <span id="current-time">0:00</span> / <span id="duration">0:00</span> <!-- Время -->
+    </div>
+    <div class="control-buttons">
+        <button id="prev-btn">Previous</button>
+        <button id="play-pause-btn">Play</button>
+        <button id="next-btn">Next</button>
+    </div>
+    <div class="volume-container">
+        <label for="volume">Volume</label>
+        <input type="range" id="volume" value="100" step="1" min="0" max="100">
+    </div>
+
+    <div class="song-list">
+    </div>
+    <body>
+        <!-- Кнопка для открытия модального окна -->
+        <button id="add-song-btn">Добавить песню</button>
+    
+        <!-- Модальное окно -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="close-modal">&times;</span>
+                <h2>Добавить новую песню</h2>
+                
+                <label for="song-title-input">Название песни:</label>
+                <input type="text" id="song-title-input">
+    
+                <label for="artist-name-input">Исполнитель:</label>
+                <input type="text" id="artist-name-input">
+    
+                <label for="song-file-input">Файл музыки:</label>
+                <input type="file" id="song-file-input" accept="audio/*">
+    
+                <label for="cover-file-input">Обложка:</label>
+                <input type="file" id="cover-file-input" accept="image/*">
+    
+                <button id="create-song-btn">Создать песню</button>
+            </div>
+        </div>
+    
+        <!-- Существующий код -->
+        <div class="current-album" style="display: flex; align-items: center;">
+            <!-- Здесь остальная структура, без изменений -->
+        </div>
+    </body>
+    
+    <script src="script.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>

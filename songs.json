@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Apnoe",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_Apnea.mp3",
+        "cover": "imgs/apnoe.png"
+    },
+    {
+        "title": "Hey",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_Hey.mp3",
+        "cover": "imgs/pinki_pai.png"
+    },
+    {
+        "title": "I'm a disco ball",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_I'm a disco ball.mp3",
+        "cover": "imgs/detka_pig.png"
+    },
+    {
+        "title": "seven hundred and seven",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_seven hundred and seven.mp3",
+        "cover": "imgs/Kishlak.png"
+    },
+    {
+        "title": "Collection of fuck and pictures",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_Collection of fuck and pictures.mp3",
+        "cover": "imgs/kishlak_tyt.png"
+    },
+    {
+        "title": "rzhavyj",
+        "artist": "Kishlak",
+        "src": "music/Kishlak_rzhavyj.mp3",
+        "cover": "imgs/kishlak_esta.png"
+    }
+]
+
